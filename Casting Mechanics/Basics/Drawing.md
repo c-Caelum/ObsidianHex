@@ -1,0 +1,1 @@
+Once you have a stave, you can begin to cast. In order to draw a pattern, 

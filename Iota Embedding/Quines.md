@@ -6,6 +6,6 @@ So first, we start with our [[Iota Embedding]] method of choice. The placeholder
 Technically, all a quine does is return its source code. Often, however, you will see it used in loops, as it is incredibly useful for keeping the stack clean and looping efficiently. 
 
 ## Further research
-[Hexcasting Quine Animation](https://www.youtube.com/watch?v=OVn7P1Y4lTs) by chloe, shows how the stack progresses as time goes on.
+[Hexcasting Quine Animation](https://www.youtube.com/watch?v=OVn7P1Y4lTs) by Chloe, shows how the stack progresses as time goes on.
 
 
