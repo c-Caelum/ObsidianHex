@@ -1,6 +1,12 @@
 ## The problem
-Let's say you have an iota which is difficult or impossible to produce at runtime. If you need this iota, you might feel locked in to using a focus, and carrying that around for the rest of your life. Luckily, there's a technique that can help us here: *iota embedding*. There are many different ways to do this, but here's the first two:
+Let's say you wish to create a hex for [greater teleportation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/great_spells/teleport). You might know the coordinates of your home base, but it'd be very difficult to recreate them on the spot using vector math! Lugging around an extra focus just for your coordinates is not convenient either. How do we solve this? Luckily, there's a technique that can help: *iota embedding*.
 
+## What is iota embedding?
+*Iota embedding* is all about inserting an iota into a hex. In reality, hexes are just lists; you can store any iota inside of them. However, as you may have already noticed, [Hermes' Gambit](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/meta@hexcasting:eval) does not take kindly to anything that is not a pattern.
+![[Screenshot 2026-03-12 204846.png|646]]
+![[Screenshot 2026-03-12 204911.png]] 
+In fact, attempting to evaluate any non-pattern results in a [mishap](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#casting/mishaps)!
+We have to somehow tell it to ignore the next iotas, however. Fortunately, we have two options:
 ## Option One
 Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:open_paren) and [retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:close_paren)? Everything between them is pushed, as a list, to the stack. This is important because, well, it doesn't *care* about the things between them. It pushes them as a list, period. This means we can shove other iotas in there, that aren't necessarily patterns, pushing them as a list. We can then use [Flock's Disintegration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/lists@hexcasting:splat) to unpack this list, placing the contents onto the stack.
 Unfortunately, Flock's Disintegration uses an evaluation, which is why you might use option two.
