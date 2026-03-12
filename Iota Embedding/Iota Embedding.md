@@ -1,8 +1,8 @@
 ## The problem
-Let's say you wish to create a hex for [greater teleportation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/great_spells/teleport). You might know the coordinates of your home base, but it'd be very difficult to recreate them on the spot using vector math! Lugging around an extra focus just for your coordinates is not convenient either. How do we solve this? Luckily, there's a technique that can help: *iota embedding*.
+Let's say you wish to create a hex for [Greater Teleportation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/great_spells/teleport). You might know the coordinates of your home base, but it'd be very difficult to recreate them on the spot using vector math! Lugging around an extra focus just for your coordinates is not convenient either. How do we solve this? Luckily, there's a technique that can help: *iota embedding*.
 
 ## What is iota embedding?
-*Iota embedding* is all about inserting an iota into a hex. In reality, hexes are just lists; you can store any iota inside of them. However, as you may have already noticed, [Hermes' Gambit](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/meta@hexcasting:eval) does not take kindly to anything that is not a pattern.
+*Iota embedding* is all about inserting any iota into a hex. In reality, hexes are just lists; you can store any iota inside of them, including vectors. However, as you may have already noticed, [Hermes' Gambit](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/meta@hexcasting:eval) does not take kindly to anything that is not a pattern.
 ![[Screenshot 2026-03-12 204846.png|646]]
 ![[Screenshot 2026-03-12 204911.png]] 
 In fact, attempting to evaluate any non-pattern results in a [mishap](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#casting/mishaps)!
