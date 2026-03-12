@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Iota Embedding/Quines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Iota Embedding"
+              "title": "Quines"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Iota Embedding/Quines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Iota Embedding"
+              "title": "Backlinks for Quines"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Iota Embedding/Quines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Iota Embedding"
+              "title": "Outgoing links from Quines"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Iota Embedding/Quines.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Iota Embedding"
+              "title": "Outline of Quines"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "df1a33f5a03cbfaa",
   "lastOpenFiles": [
-    "Iota Embedding/Quines.md",
     "Iota Embedding/Iota Embedding.md",
+    "Iota Embedding/Quines.md",
     "Untitled.md",
     "Iota Embedding"
   ]
