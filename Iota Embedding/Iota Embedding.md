@@ -2,9 +2,7 @@
 Let's say you wish to create a hex for [Greater Teleportation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/great_spells/teleport). You might know the coordinates of your home base, but it'd be very difficult to recreate them on the spot using vector math! Lugging around an extra focus just for your coordinates is not convenient either. How do we solve this? Luckily, there's a technique that can help: *iota embedding*.
 
 ## Why can't we just *put it there*?
-If we want to get an iota on the stack, why can't we just *put it there*? Well, it's because Hermes' Gambit doesn't take kindly to things other than patterns being executed, presenting you with a mishap. To get around this, we "*[escape](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas)*" the pattern, which is a scary term for "stop it from executing." [[Screenshot 2026-03-12 204911.png]]
-
-
+If we want to get an iota on the stack, why can't we just *put it there*? Well, it's because [Hermes' Gambit](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/meta@hexcasting:eval) doesn't take kindly to things other than patterns being executed, presenting you with a mishap. To get around this, we "*[escape](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas)*" the pattern, which is a scary term for "stop it from executing." [[Screenshot 2026-03-12 204911.png]]
 
 ## Option One
 Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:open_paren) and [retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:close_paren)? Everything between them is pushed, as a list, to the stack. This is important because, well, it doesn't *care* about the things between them. It pushes them as a list, period. This means we can shove other iotas in there, that aren't necessarily patterns, pushing them as a list. We can then use [Flock's Disintegration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/lists@hexcasting:splat) to unpack this list, placing the contents onto the stack.
