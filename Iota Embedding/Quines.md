@@ -1,0 +1,2 @@
+## Idea
+Quines are very simple in theory. You use [[Iota Embedding]] to embed a copy of a hex into itself, and then that hex now has the blueprint to do it again. The nuances, though, are a little more complicated. 
