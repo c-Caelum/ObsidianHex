@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Casting Mechanics/Basics/Drawing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Iota Embedding"
+              "title": "Backlinks for Drawing"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Casting Mechanics/Basics/Drawing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Iota Embedding"
+              "title": "Outgoing links from Drawing"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Iota Embedding/Iota Embedding.md",
+                "file": "Casting Mechanics/Basics/Drawing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Iota Embedding"
+              "title": "Outline of Drawing"
             }
           }
         ]
@@ -187,9 +187,15 @@
   "lastOpenFiles": [
     "Iota Embedding/Screenshot 2026-03-12 204911.png",
     "Iota Embedding/Screenshot 2026-03-12 204846.png",
-    "Iota Embedding/Quines.md",
     "Iota Embedding/Iota Embedding.md",
-    "Untitled.md",
+    "Casting Mechanics/Basics/Drawing.md",
+    "Casting Mechanics/Basics/Amethyst.md",
+    "Casting Mechanics/Niche/Evaluation Limit.md",
+    "Casting Mechanics/Basics",
+    "Casting Mechanics/Niche",
+    "Iota Embedding/Quines.md",
+    "Casting Mechanics",
+    "TODO.md",
     "Iota Embedding"
   ]
 }
