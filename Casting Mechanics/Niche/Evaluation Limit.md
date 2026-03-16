@@ -1,3 +1,5 @@
+# The Evaluation Limit
+
 The evaluation limit is hex's way of restricting you so you don't crash the game instantly. Most, but not all, patterns use an evaluation. As a rule of thumb: if it does something, then it probably uses an evaluation. [Escaping Patterns](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas) are an exception, and if you're playing with addons, then you might have more. 
 
 By default, you have 100 thousand evaluations per cast, but on spell circles, this is reset each slate.
