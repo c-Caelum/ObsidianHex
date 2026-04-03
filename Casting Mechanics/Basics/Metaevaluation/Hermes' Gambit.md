@@ -2,7 +2,7 @@ Hermes' Gambit evaluates a hex, as if you had drawn it with your staff. This is 
 
 Conditionals,
 Loops,
-ForEach (though you could always use [[Thoth's Gambit]])
+For loops (though you could always use [[Thoth's Gambit]])
 
 
 
