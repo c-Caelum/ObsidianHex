@@ -1,9 +1,9 @@
-[Back to Overview](Techniques/Iota%20Embedding/Consideration/Overview)
+[[Overview|Back to Overview]]
 
 [[Evaluation Limit|Evaluation]] saves are the reason you might still choose to sometimes use [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:escape) [[Iota Embedding|embeds]] as an [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren) and [Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren) user. This is however a niche use that finds little application outside of extreme, eval-hungry circumstances.
 
 ## Core concept
-[Escape patterns](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/patterns_as_iotas) do not use up evaluations. As a result, Consideration embeds do not use up any evaluations at all, unlike Introspection and Retrospection which generally requires Flock's Disintegration.
+[Escape patterns](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/patterns_as_iotas) do not use up evaluations. As a result, Consideration embeds do not use up any evaluations at all, unlike Introspection and Retrospection which generally requires [Flock's Disintegration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/lists@hexcasting:splat).
 
 In a normal hex, this might not have much of an effect. Where this shines, however, are loops (link here later). Large loops (like quarries, for example) tend to be incredibly evaluation heavy, and might even require several ticks to fully process!
 
