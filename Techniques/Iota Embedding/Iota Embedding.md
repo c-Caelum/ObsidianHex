@@ -9,7 +9,9 @@ Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_u
 Unfortunately, Flock's Disintegration uses an evaluation, which is why you might use option two.
 More on *getting the iota in there* at the end.
 ## Option Two
-[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option is nice because it doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Overview.md) that aren't as neat with introspection and retrospection. *However*, this requires a change in approach - instead of nesting introspection and retrospection, you will have to embed lists - otherwise, you will have to use 2^n considerations, where n is the depth of introspection and retrospection. List embedding has its advantages and disadvantages, with the biggest disadvantage being the inconvenience of having to create an additional embed. 
+[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option is nice because it doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Overview.md) that aren't as neat with introspection and retrospection. 
+
+*However*, this requires a change in approach - instead of nesting introspection and retrospection, you will have to embed lists - otherwise, you will have to use 2^n considerations, where n is the depth of introspection and retrospection. List embedding has its advantages and disadvantages, with the biggest disadvantage being the inconvenience of having to create an additional embed. 
 
 So, logically, we just need to get the iota in there. Now, how do we do that?
 
@@ -19,12 +21,14 @@ I will forever reiterate that **hexes are data**. They are lists, nothing more. 
 
 ```patterns
 {
- EAST,w
+	{
+		Bookkeeper's Gambit: -
+	}
+	Flock's Disintegration
+	\\Bookkeeper's Gambit: -
 }
-Flock's Disintegration
-Consideration
-EAST,w
 ```
+Remember that you need to draw Consideration twice to insert it into a list, even while not nesting Introspection and Retrospection.
 
 [[Quines]] are also a very useful application of iota embedding, so go learn those next if you're ready!
 
