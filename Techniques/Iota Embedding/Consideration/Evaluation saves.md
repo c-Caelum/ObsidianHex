@@ -1,5 +1,9 @@
-[[Overview|Back to Overview]]
-
+---
+tags:
+  - Consideration
+  - IotaEmbedding
+author: Matt6049
+---
 [[Evaluation Limit|Evaluation]] saves are the reason you might still choose to sometimes use [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:escape) [[Iota Embedding|embeds]] as an [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren) and [Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren) user. This is however a niche use that finds little application outside of extreme, eval-hungry circumstances.
 
 ## Core concept

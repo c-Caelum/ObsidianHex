@@ -1,5 +1,9 @@
-[[Overview|Back to Overview]]
-
+---
+tags:
+  - Consideration
+  - IotaEmbedding
+author: Matt6049
+---
 Let's get this out of the way first. List [[Iota Embedding|embedding]] instead of [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren)+[Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren) is not necessarily evil. It doesn't hurt you. Yes, it requires extra list manipulation, but it makes list manipulation on affected hexes easier.
 
 When creating a hex with embedded lists, you firstly create the list that will contain the embed, and then you create the list that will be embedded within the first one. Remember; even without nesting Introspection and Retrospection, you still need to draw [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/patterns_as_iotas@hexcasting:escape) twice to insert it once into the list.

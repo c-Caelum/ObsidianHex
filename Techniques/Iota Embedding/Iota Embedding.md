@@ -1,3 +1,10 @@
+---
+author: Caelum, Matt6049
+tags:
+  - IotaEmbedding
+  - Consideration
+  - IntroRetro
+---
 ## The problem
 Let's say you have an iota which is difficult or impossible to produce at runtime. If you need this iota, you might feel locked in to using a focus, and carrying that around for the rest of your life. Luckily, there's a technique that can help us here: *iota embedding*. There are many different ways to do this, but here's the first two:
 
@@ -9,7 +16,7 @@ Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_u
 Unfortunately, Flock's Disintegration uses an evaluation, which is why you might use option two.
 More on *getting the iota in there* at the end.
 ## Option Two
-[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option is nice because it doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Overview.md) that aren't as neat with introspection and retrospection. 
+[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option is nice because it doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Consideration%20Overview.md) that aren't as neat with introspection and retrospection. 
 
 *However*, this requires a change in approach - instead of nesting introspection and retrospection, you will have to embed lists - otherwise, you will have to use 2^n considerations, where n is the depth of introspection and retrospection. List embedding has its advantages and disadvantages, with the biggest disadvantage being the inconvenience of having to create an additional embed. 
 
