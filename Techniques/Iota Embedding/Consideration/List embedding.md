@@ -1,8 +1,6 @@
-# Why Consideration?
-As you may have already read in [[Iota Embedding]], [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) is an alternative to Introspection and Retrospection. On one hand, it sounds neater, not needing a whole extra pattern and evaluation. On the other hand, the whole deal with list embedding sounds incredibly inconvenient. So what are the practical applications?
+[[Overview|Back to Overview]]
 
-## List embedding
-Let's get this one out of the way first. List embedding is not necessarily evil. It doesn't hurt you. Yes, it requires extra list manipulation, but it makes list manipulation on affected hexes easier.
+Let's get this out of the way first. List [[Iota Embedding|embedding]] instead of [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren)+[Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren) is not necessarily evil. It doesn't hurt you. Yes, it requires extra list manipulation, but it makes list manipulation on affected hexes easier.
 
 Embedded lists get highlighted brackets within base Hexcasting! They also only count as 1 list element, and therefore do not bloat indices nearly as much as nested introspection and retrospection, making it easier to accomplish any embedding. They do make it more difficult to use hex editing macros, which prefer "flat" lists, however you might find manual editing simpler this way. A common mantra would be:
 ```k
@@ -27,4 +25,4 @@ Additionally, [[Quines]] already use embedded lists! The Consideration-using Qui
 	Surgeon's Exaltation
 ]
 ```
-Between the outer copy and the inner copy, this quine takes up 8 fewer patterns! At the cost of 2 extra patterns, you could also embed the number to reduce the evaluation overhead to 3 per cast! If not using a leading payload, it'd be further reduced to 2 evaluations.
+Between the outer copy and the inner copy, this quine takes up 8 fewer patterns. At the cost of 2 extra patterns, you could also embed the number to reduce the evaluation overhead to 3 per cast!
