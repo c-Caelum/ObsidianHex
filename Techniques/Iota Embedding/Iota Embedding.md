@@ -13,15 +13,17 @@ Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_u
 
 ![An embedding example.|192](https://github.com/c-Caelum/ObsidianHex/tree/main/Techniques/Iota%20Embedding/images/embedding1.png)
 
-Unfortunately, Flock's Disintegration uses an evaluation, which is why you might use option two.
-More on *getting the iota in there* at the end.
+This is the method that is the easiest to deal with, however it is quite bulky, requires an extra evaluation (Flock's Disintegration), and can be less readable than the alternative. It also does not have any particularly weird techniques, although those tend to be quite niche.
 ## Option Two
-[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option is nice because it doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Consideration%20Overview.md) that aren't as neat with introspection and retrospection. 
+[Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:escape) pushes the next iota after it to the stack. It, once again, does not *care* about whether it is a pattern or an iota. This option can at times be more desirable because it is smaller, doesn't use an [evaluation](Casting%20Mechanics/Niche/Evaluation%20Limit), and allows for [certain techniques](Consideration%20Overview.md) that aren't as neat with Introspection and Retrospection. It is however more difficult and less convenient to use.
 
-*However*, this requires a change in approach - instead of nesting introspection and retrospection, you will have to embed lists - otherwise, you will have to use 2^n considerations, where n is the depth of introspection and retrospection. List embedding has its advantages and disadvantages, with the biggest disadvantage being the inconvenience of having to create an additional embed. 
+**Consideration needs to be doubled up inside an Introspection/Retrospection block. 
+Blue Consideration - not in the list yet;
+Yellow Consideration - is in the list.
+
+The above necessitates a change in approach - instead of nesting Introspection and Retrospection, you should use list embeds. This prevents this issue from stacking and has some other advantages, with the biggest disadvantage being the inconvenience of having to create an additional embed. 
 
 So, logically, we just need to get the iota in there. Now, how do we do that?
-
 ## Getting the iota in there
 I will forever reiterate that **hexes are data**. They are lists, nothing more. Notably, this means that you can use [List Manipulation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/lists) to edit them! More specifically, [Surgeon's Exaltation](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/lists@hexcasting:replace) is of use here, as we can just find the index of where we want to put the iota, and then do surgery to put it in there. Because Surgeon's Exaltation requires a thing to replace, we use placeholders to signify where the iota will go. A common one is [Bookkeeper's Gambit: -](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/stackmanip@hexcasting:mask), but do note that this is just convention, and any placeholder will do.
 
