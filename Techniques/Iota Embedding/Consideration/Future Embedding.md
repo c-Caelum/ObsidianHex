@@ -40,7 +40,7 @@ Huginn's Gambit
 The old Ravenmind state should re-appear after we're done casting that inner hex with Hermes' Gambit. We can then immediately consume that iota by putting it back on the Ravenmind. In the meantime, it's not lingering anywhere on the stack. 
 
 ## Pseudoquines
-In addition to stack manipulation, this can be used for craft something called a **Pseudoquine** (see: [[Quines]]). This can be treated like a Leading Payload Quine that requires external assistance for copying. It can be useful if you still need to preserve a hex after casting and don't want it lingering on the stack (like it would be had you simply cast `Gemini Decomposition; Hermes' Gambit`), but also do not want to assemble a full quine for the sake of this task, which would potentially take up a lot of space within your focus.
+In addition to stack manipulation, this can be used for craft something called a **Pseudoquine** (see: [[Quines]]). It's just a specific case of Future Embedding, and can be treated like a Leading Payload Quine that requires external assistance for copying. It can be useful if you still need to preserve a hex after casting and don't want it lingering on the stack (like it would be had you simply cast `Gemini Decomposition; Hermes' Gambit`), but also do not want to assemble a full quine for the sake of this task, which would potentially take up a lot of space within your focus.
 
 Let's use a simple mining hex as an example:
 ```k
@@ -51,7 +51,8 @@ Let's use a simple mining hex as an example:
 	Alidade's Purification
 	Archer's Distillation
 	Break Block
-	Consideration //trailing consideration! This is necessary for a pseudoquine.
+	Consideration //trailing consideration again! 
+				  //This is necessary for a pseudoquine.
 ]
 Gemini Decomposition
 Integration Distillation

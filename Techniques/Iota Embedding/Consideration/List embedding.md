@@ -4,13 +4,13 @@ tags:
   - IotaEmbedding
 author: Matt6049
 ---
-Let's get this out of the way first. List [[Iota Embedding|embedding]] instead of [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren)+[Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren) is not necessarily evil. It doesn't hurt you. Yes, it requires extra list manipulation, but it makes list manipulation on affected hexes easier.
-
-## Dealing with list embeds
-When creating a hex with embedded lists, you firstly create the list that will contain the embed, and then you create the list that will be embedded within the first one. Remember; even without nesting Introspection and Retrospection, you still need to draw [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/#patterns/patterns_as_iotas@hexcasting:escape) twice to insert it once into the list.
-Alternatively, if you have some pre-made function that you use often, you can just load it up and insert it into your hex with no fuss. 
+List [[Iota Embedding|embedding]] is the practice of embedding lists instead of using Nested [Introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:open_paren) and [Retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:close_paren). This tradeoff offers several advantages and disadvantages, which are covered in this article. 
 
 ## Advantages
+Firstly, this allows the use of [Consideration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us/?nospoiler#patterns/patterns_as_iotas@hexcasting:escape) without the need to double it up for each additional nested layer. You are still forced to use it twice to insert it into the list before embedding, but no more than that.
+
+Hexes utilizing embedded lists can also be easier to modify by hand - embedded lists do not bloat list indices, and can be taken out in one piece using a single Selection Distillation, or replaced in their entirety using a single Surgeon's Exaltation. 
+
 Embedded lists get highlighted brackets within base Hexcasting! They also only count as 1 list element, and therefore do not bloat indices nearly as much as nested introspection and retrospection, making it easier to accomplish any embedding. They do make it more difficult to use hex editing macros, which prefer "flat" lists, however you might find manual editing simpler this way. A common mantra would be:
 ```k
 Numerical Reflection: index of edited list
