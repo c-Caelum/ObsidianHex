@@ -4,7 +4,8 @@ Let's say you have an iota which is difficult or impossible to produce at runtim
 ## Option One
 Do you remember [introspection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:open_paren) and [retrospection](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/patterns_as_iotas@hexcasting:close_paren)? Everything between them is pushed, as a list, to the stack. This is important because, well, it doesn't *care* about the things between them. It pushes them as a list, period. This means we can shove other iotas in there, that aren't necessarily patterns, pushing them as a list. We can then use [Flock's Disintegration](https://hexcasting.hexxy.media/v/0.11.3/1.0/en_us#patterns/lists@hexcasting:splat) to unpack this list, placing the contents onto the stack.
 
-![An embedding example.|192](https://github.com/c-Caelum/ObsidianHex/tree/main/Techniques/Iota%20Embedding/images/embedding1.png)
+![An embedding example.](https://github.com/c-Caelum/ObsidianHex/tree/main/Techniques/Iota%20Embedding/images/embedding1.png)
+
 
 Unfortunately, Flock's Disintegration uses an evaluation, which is why you might use option two.
 More on *getting the iota in there* at the end.

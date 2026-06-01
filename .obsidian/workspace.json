@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Techniques/Iota Embedding/Iota Embedding.md",
+                "file": "Techniques/Iota Embedding/Quines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Iota Embedding"
+              "title": "Quines"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Techniques/Iota Embedding/Iota Embedding.md",
+                "file": "Techniques/Iota Embedding/Quines.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Iota Embedding"
+              "title": "Outline of Quines"
             }
           }
         ],
@@ -185,18 +185,21 @@
   },
   "active": "2dff38b19bfa75e6",
   "lastOpenFiles": [
-    "README.md",
-    "Techniques/Iota Embedding/Quines.md",
+    "Techniques/Iota Embedding/images/quine2.png",
     "Techniques/Iota Embedding/Iota Embedding.md",
-    "Techniques/Iota Embedding/images/embedding2.png",
+    "Techniques/Iota Embedding/images/quine1.png",
+    "Techniques/Iota Embedding/Quines.md",
+    "[[Iota.md",
     "Techniques/Iota Embedding/images/embedding1.png",
-    "Techniques/Iota Embedding/images",
     "Casting Mechanics/Niche/The Continuation.md",
+    "Casting Mechanics/Niche/Evaluation Limit.md",
+    "README.md",
+    "Techniques/Iota Embedding/images/embedding2.png",
+    "Techniques/Iota Embedding/images",
     "Casting Mechanics/Basics/Metaevaluation/Thanatos' Reflection.md",
     "Casting Mechanics/Basics/Metaevaluation/Metaevaluation.md",
     "Casting Mechanics/Basics/Metaevaluation/Hermes' Gambit.md",
     "Casting Mechanics/Basics/Metaevaluation/Thoth's Gambit.md",
-    "Casting Mechanics/Niche/Evaluation Limit.md",
     "Casting Mechanics/Basics/Metaevaluation",
     "Techniques",
     "Casting Mechanics/Basics/Amethyst.md",
